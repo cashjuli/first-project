@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Juli Cash" />
+    <meta
+      name="description"
+      content="Vivir de Comer nació de un honesto deseo de compartir una de mis pasiones: la gastronomía. Mi sueño más profundo es inspirar a la gente a que se anime a cocinar y conocer mejor lo que uno come."
+    />
+    <title>Vivir de Comer 🥯</title>
+    <link
+      rel="icon"
+      type="image"
+      href="https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-9/107288103_117821753326359_5765589749091627336_n.png?_nc_cat=102&_nc_sid=09cbfe&_nc_ohc=DtT8LifZ5T8AX-zjOQC&_nc_ht=scontent-mad1-1.xx&oh=bcb0a49d95e491fd3201dd3a48da8996&oe=5F431571"
+    />
+    <style>
+      div {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-9/107093915_111382193970315_3067916700392026785_o.jpg?_nc_cat=104&_nc_sid=e3f864&_nc_ohc=o23XSWzS6FEAX8ex6MN&_nc_ht=scontent-mad1-1.xx&oh=0d11bfb46e8426b2fce96363d026842f&oe=5F4261F1");
+        background-size: contain;
+      }
+      nav {
+        padding: 0%;
+        margin: 0px;
+        border: 0px;
+        transition: all 200ms ease-in-out;
+      }
+      nav:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+
+      .logo {
+        border-radius: 50px;
+        width: 100px;
+        height: 100px;
+      }
+
+      .navListUl {
+        display: block;
+        list-style: inside;
+        width: 100%;
+      }
+      .navList {
+        font-family: "Roboto Slab";
+        vertical-align: middle;
+        color: #fff;
+        padding: 0 0 0 0;
+        width: 15%;
+      }
+      .navLinks {
+        text-decoration: none;
+        color: white;
+      }
+      .navLinks:hover {
+        font-weight: 600;
+      }
+
+      h1 {
+        text-align: center;
+        font-family: Broadway, sans-serif;
+        font-size: 40px;
+        color: white;
+        padding: 10px 0 150px 0;
+        margin: 0;
+      }
+
+      .blinkingBar {
+        animation: blink 0.5s infinite ease;
+      }
+
+      @keyframes blink {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      h2 {
+        font-family: "Roboto Slab";
+        text-align: center;
+        font-size: 40px;
+      }
+
+      h3 {
+        font-family: "Roboto Slab";
+        text-align: center;
+        font-size: 30px;
+        padding: 0 20%;
+        line-height: 2;
+      }
+
+      h4 {
+        font-family: Broadway;
+        font-size: 26px;
+      }
+      img {
+        border-radius: 50%;
+        border: 3px solid #f1b65d;
+        height: 150px;
+        width: 150px;
+      }
+
+      p {
+        font-family: "Roboto Slab";
+        text-align: center;
+      }
+      ul {
+        padding: 0;
+        list-style-type: none;
+        text-align: center;
+        margin: 0;
+      }
+
+      li {
+        list-style-position: inside;
+        display: inline-table;
+        padding: 0 5%;
+        font-family: "Roboto Slab";
+      }
+
+      .youtubeLink {
+        text-decoration: none;
+        color: #f1b65d;
+      }
+      .youtubeLink:hover {
+        text-decoration: underline;
+      }
+
+      .pidetusbagelsbutton {
+        color: #fff;
+        background: #f1b65d;
+        display: block;
+        font-family: Roboto Slab;
+        padding: 5px;
+        margin: 50px auto;
+        border: 2px solid #f1b65d;
+        border-radius: 50px;
+        transition: all 200ms ease-in-out;
+      }
+
+      .pidetusbagelsbutton:hover {
+        background: #fff;
+        color: #000;
+        cursor: pointer;
+      }
+      .pidetusbagelsbuttontext {
+        color: #fff;
+        background: #f1b65d;
+        display: block;
+        font-family: Roboto Slab;
+        padding: 5px;
+        margin: 50px auto;
+        border: 2px solid #f1b65d;
+        border-radius: 50px;
+        transition: all 200ms ease-in-out;
+      }
+
+      .pidetusbagelsbuttontext:hover {
+        background: #fff;
+        color: #000;
+        cursor: pointer;
+      }
+
+      footer {
+        text-align: center;
+        margin: 0;
+        font-family: monospace;
+      }
+      input {
+        display: block;
+        margin: 0 auto;
+        border-radius: 30px;
+        border: 2px solid #f1b65d;
+        width: 33%;
+        color: #f1b65d;
+        font-size: 20px;
+        font-family: roboto slab;
+        box-shadow: 2px 5px rgba(148, 107, 46, 0.5);
+      }
+      .suscripcion {
+        color: #fff;
+        background: #f1b65d;
+        display: block;
+        width: 33%;
+        margin: 0 auto;
+        border: 2px solid #f1b65d;
+        border-radius: 30px;
+        font-size: 30px;
+        transition: all 200ms ease-in-out;
+        font-family: roboto slab;
+      }
+
+      .suscripcion:hover {
+        background: #fff;
+        color: #000;
+        cursor: pointer;
+      }
+      hr {
+        margin: 5%;
+      }
+    </style>
+  </head>
+  <body>
+    <!--background image-->
+    <div>
+      <!--navigation bar-->
+      <nav>
+        <ul class="navListUl">
+          <li class="navList">
+            <img
+              src="https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-9/107288103_117821753326359_5765589749091627336_n.png?_nc_cat=102&_nc_sid=09cbfe&_nc_ohc=DtT8LifZ5T8AX-zjOQC&_nc_ht=scontent-mad1-1.xx&oh=bcb0a49d95e491fd3201dd3a48da8996&oe=5F431571"
+              class="logo"
+            />
+          </li>
+          <li class="navList">
+            <a href="#linkSomos" class="navLinks">Quienes Somos</a>
+          </li>
+          <li class="navList">
+            <a href="#linkBagels" class="navLinks">Los Bagels</a>
+          </li>
+          <li class="navList">
+            <a href="#linkVlog" class="navLinks">Nuestro Vlog</a>
+          </li>
+          <li class="navList">
+            <a href="#linkSusc" class="navLinks">Suscríbete al NewsLetter</a>
+          </li>
+          <li>
+            <button class="pidetusbagelsbutton" style="font-size: 20px;">
+              ¡Pide tus Bagels!
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <!--site title, typewriting effect-->
+      <h1>
+        Vivir de
+        <span class="typing"> </span> <span class="blinkingBar">|</span>
+      </h1>
+    </div>
+    <h2><a name="linkSomos">👩🏻‍🎨Quienes Somos👨🏻‍🎤</a></h2>
+    <h3>Argentinos en Madrid</h3>
+    <ul>
+      <li>
+        <h4>Serena</h4>
+        <a
+          class="profilepic"
+          href="https://www.instagram.com/seregriffin/?hl=es "
+          target="_blank"
+        >
+          <img
+            src="https://scontent-mad1-1.cdninstagram.com/v/t51.2885-19/s150x150/95906420_177855373424000_2800547706123059200_n.jpg?_nc_ht=scontent-mad1-1.cdninstagram.com&_nc_ohc=LKut04v4qGYAX_AYx53&oh=fa26776d61dd2e4982888da829281464&oe=5F462470"
+          />
+        </a>
+        <br />
+        🔥 Caos 🔥
+        <br />
+        🌍 Madrid 🇪🇸
+      </li>
+      <li>
+        <h4>Pablo</h4>
+        <a
+          class="profilepic"
+          href="https://www.instagram.com/pol.maeda/?hl=es"
+          target="_blank"
+        >
+          <img
+            src="https://scontent-mad1-1.cdninstagram.com/v/t51.2885-19/s150x150/69581798_393291198024743_7972001549587054592_n.jpg?_nc_ht=scontent-mad1-1.cdninstagram.com&_nc_ohc=8Nxt-SO59c0AX8bs1IK&oh=b12de4dfea1d8b74bd4e622038e47192&oe=5F47285C"
+          />
+        </a>
+        <br />
+        Pol M 🐏
+        <br />
+        📻spotify/bandcamp📻
+        <br />
+        ¿Existen todavía <br />las canciones LO-FI?
+      </li>
+    </ul>
+    <hr />
+    <h2><a name="linkBagels">Los Bagels🥯</a></h2>
+    <h3>
+      Lo más “New York style” posible 😎. Después de probar mil recetas, les
+      ofrecemos estas 3 opciones:
+    </h3>
+    <ul>
+      <li>
+        <img
+          src="https://scontent-mad1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/109741476_1401005716754265_1147958994760896938_n.jpg?_nc_ht=scontent-mad1-1.cdninstagram.com&_nc_cat=109&_nc_ohc=5bCoGzv3yqcAX8dlBZO&oh=234891245632902cb06d0bb758c65a64&oe=5F450601"
+        />
+        <br />
+        <strong>Mega</strong>MIX
+      </li>
+      <li>
+        <img
+          src="https://scontent-mad1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/107921552_956607024846528_4168150296782299603_n.jpg?_nc_ht=scontent-mad1-1.cdninstagram.com&_nc_cat=100&_nc_ohc=SMh5wQwUdqwAX_NEAKY&oh=3314c19dec8e644a88b6e06fd898c01a&oe=5F46E788"
+        />
+        <br />
+        Chia <em>L🖤ve</em>
+      </li>
+      <li>
+        <img
+          src="https://scontent-mad1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/103866340_184142449685963_3401611970871256181_n.jpg?_nc_ht=scontent-mad1-1.cdninstagram.com&_nc_cat=111&_nc_ohc=GYSbqLQ7EOQAX9U0r5P&oh=387a25e3aa7cc0981f32b577f8fe8fba&oe=5F46E9BC"
+        />
+        <br />
+        Marino 🌊
+      </li>
+    </ul>
+
+    <button class="pidetusbagelsbuttontext" style="padding: 5px 150px;">
+      <h2>¡Pide tus Bagels! 🤝</h2>
+    </button>
+    <hr />
+    <h2><a name="linkVlog">📹Nuestro Vlog</a></h2>
+    <h3>
+      ¡Síguenos en
+      <a
+        href="https://www.youtube.com/channel/UCKAFMJD9lhoi0btrJSXSGHA/featured"
+        target="_blank"
+        class="youtubeLink"
+        >YouTube</a
+      >
+      para ver las mejores recetas!
+    </h3>
+    <hr />
+
+    <h2><a name="linkSusc">Suscríbete al NewsLetter👩‍💻</a></h2>
+    <p>
+      ¿Cómo te llamas?
+    </p>
+
+    <input type="text" id="inputName" />
+    <br />
+    <p>
+      ¿Cuál es tu email?
+    </p>
+    <input type="text" id="inputEmail" />
+    <br />
+    <button class="suscripcion">Enviar</button>
+    <br />
+    <footer>
+      This page was coded by
+      <a href="https://www.instagram.com/cashjuli/" target="_blank"
+        >Juli Cash</a
+      >
+    </footer>
+    <script>
+      //typewriting effect
+      const texts = ["bagels", "astrología", "arte", "Madrid", "Comer"];
+      let count = 0;
+      let index = 0;
+      let currentText = "";
+      let letter = "";
+
+      (function type() {
+        if (count === texts.length) {
+          count = 0;
+        }
+
+        currentText = texts[count];
+        letter = currentText.slice(0, ++index);
+
+        document.querySelector(".typing").textContent = letter;
+        if (letter.length === currentText.length) {
+          count++;
+          index = 0;
+        }
+        setTimeout(type, 200);
+      })();
+
+      //ask for bagels button
+
+      function bagelsQuantity() {
+        let megamixQ = prompt("¿Cuántos bagel MegaMIX quieres?", "0"); //this means how many "MegaMix" bagels do you want?
+        megamixQ = parseInt(megamixQ);
+        let chiaQ = prompt("¿Cuántos bagel Chia Love quieres?", "0"); //this means how many "ChiaLove" bagels do you want?
+        chiaQ = parseInt(chiaQ);
+        let marinoQ = prompt("¿Cuántos bagel Marino quieres?", "0"); //this means how many "Marino" bagels do you want?
+        marinoQ = parseInt(marinoQ);
+        if (megamixQ + chiaQ + marinoQ > 0) {
+          alert(
+            "Estamos preparando tu pedido de " +
+              (megamixQ + chiaQ + marinoQ) +
+              " bagels 🥯 ¡Te avisaremos cuando esté listo!"
+          );
+        } else {
+          alert("🤨 Creo que no has añadido ningún bagel a tu pedido... ");
+        }
+      }
+      let askForBagels = document.querySelector(".pidetusbagelsbutton");
+      askForBagels.addEventListener("click", bagelsQuantity);
+      let askForBagelstext = document.querySelector(".pidetusbagelsbuttontext");
+      askForBagelstext.addEventListener("click", bagelsQuantity);
+
+      //Newsletter section button
+      function mensaje() {
+        let name = document.getElementById("inputName").value;
+        let email = document.getElementById("inputEmail").value;
+        alert(
+          `Gracias por suscribirte ${name}, pronto comenzarás a recibir nuestras noticias💞`
+        );
+      }
+      let enviar = document.querySelector(".suscripcion");
+      enviar.addEventListener("click", mensaje);
+    </script>
+  </body>
+</html>
