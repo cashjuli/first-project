@@ -1,0 +1,186 @@
+div {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../media/110130610_322701788884525_1901142107023703394_n.jpg");
+  background-size: contain;
+}
+nav {
+  padding: 0%;
+  margin: 0px;
+  border: 0px;
+  transition: all 200ms ease-in-out;
+}
+nav:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+}
+
+.navListUl {
+  display: block;
+  list-style: inside;
+  width: 100%;
+}
+.navList {
+  font-family: "Roboto Slab";
+  vertical-align: middle;
+  color: #fff;
+  padding: 0 0 0 0;
+  width: 15%;
+}
+.navLinks {
+  text-decoration: none;
+  color: white;
+}
+.navLinks:hover {
+  font-weight: 600;
+}
+
+h1 {
+  text-align: center;
+  font-family: Broadway, sans-serif;
+  font-size: 40px;
+  color: white;
+  padding: 10px 0 150px 0;
+  margin: 0;
+}
+
+.blinkingBar {
+  animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h2 {
+  font-family: "Roboto Slab";
+  text-align: center;
+  font-size: 40px;
+}
+
+h3 {
+  font-family: "Roboto Slab";
+  text-align: center;
+  font-size: 30px;
+  padding: 0 20%;
+  line-height: 2;
+}
+
+h4 {
+  font-family: Broadway;
+  font-size: 26px;
+}
+img {
+  border-radius: 50%;
+  border: 3px solid #f1b65d;
+  height: 150px;
+  width: 150px;
+}
+
+p {
+  font-family: "Roboto Slab";
+  text-align: center;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+}
+
+li {
+  list-style-position: inside;
+  display: inline-table;
+  padding: 0 5%;
+  font-family: "Roboto Slab";
+}
+
+.youtubeLink {
+  text-decoration: none;
+  color: #f1b65d;
+}
+.youtubeLink:hover {
+  text-decoration: underline;
+}
+
+.pidetusbagelsbutton {
+  color: #fff;
+  background: #f1b65d;
+  display: block;
+  font-family: Roboto Slab;
+  padding: 5px;
+  margin: 50px auto;
+  border: 2px solid #f1b65d;
+  border-radius: 50px;
+  transition: all 200ms ease-in-out;
+}
+
+.pidetusbagelsbutton:hover {
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+}
+.pidetusbagelsbuttontext {
+  color: #fff;
+  background: #f1b65d;
+  display: block;
+  font-family: Roboto Slab;
+  padding: 5px;
+  margin: 50px auto;
+  border: 2px solid #f1b65d;
+  border-radius: 50px;
+  transition: all 200ms ease-in-out;
+}
+
+.pidetusbagelsbuttontext:hover {
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  margin: 0;
+  font-family: monospace;
+}
+input {
+  display: block;
+  margin: 0 auto;
+  border-radius: 30px;
+  border: 2px solid #f1b65d;
+  width: 33%;
+  color: #f1b65d;
+  font-size: 20px;
+  font-family: roboto slab;
+  box-shadow: 2px 5px rgba(148, 107, 46, 0.5);
+}
+.suscripcion {
+  color: #fff;
+  background: #f1b65d;
+  display: block;
+  width: 33%;
+  margin: 0 auto;
+  border: 2px solid #f1b65d;
+  border-radius: 30px;
+  font-size: 30px;
+  transition: all 200ms ease-in-out;
+  font-family: roboto slab;
+}
+
+.suscripcion:hover {
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+}
+hr {
+  margin: 5%;
+}
